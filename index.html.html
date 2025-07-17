@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>360 Lifestyle - Dine, Dance & Party</title>
+  <link rel="stylesheet" href="360_Lifestyle.css" />
+</head>
+<body>
+
+  <header>
+    <img src="WhatsApp Image 2025-07-17 at 15.53.30_252a14fc.jpg" alt="360 Lifestyle Logo" class="logo" />
+  </header>
+
+  <nav>
+    <a href="#about" class="order-link">About</a>
+    <a href="#order" class="order-link">Order</a>
+    <a href="#tickets" class="order-link">Buy Tickets</a>
+    <a href="#visit" class="order-link">Visit Us</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About 360 Lifestyle</h2>
+    <p>Welcome to the ultimate nightlife experience. 360 Lifestyle brings you unforgettable parties and events every weekend.</p>
+	<img src="WhatsApp Image 2025-07-17 at 20.41.17_c5002fa1.jpg">
+  </section>
+
+  <!-- Order Section -->
+  <section id="order">
+    <h2>Order</h2>
+
+    <div class="category">
+      <button class="category-toggle" onclick="toggleCategory(this)">Drinks</button>
+      <div class="category-content">
+        <div class="subcategory">
+          <button class="subcategory-toggle" onclick="toggleSubcategory(this)">Beer</button>
+          <div class="subcategory-content">
+            <p>Castle Lager - R30</p>
+            <p>Heineken - R35</p>
+          </div>
+        </div>
+
+        <div class="subcategory">
+          <button class="subcategory-toggle" onclick="toggleSubcategory(this)">Vodka</button>
+          <div class="subcategory-content">
+            <p>Smirnoff - R40</p>
+            <p>Belvedere - R90</p>
+          </div>
+        </div>
+
+        <div class="subcategory">
+          <button class="subcategory-toggle" onclick="toggleSubcategory(this)">Gin</button>
+          <div class="subcategory-content">
+            <p>Bombay Sapphire - R60</p>
+            <p>Tanqueray - R55</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <button class="category-toggle" onclick="toggleCategory(this)">Food</button>
+      <div class="category-content">
+        <p>Burger & Chips - R80</p>
+        <p>Wings (6pc) - R70</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy Tickets Section -->
+  <section id="tickets">
+    <h2>Buy Show Tickets</h2>
+    <p>Get your tickets to the hottest parties and live DJ performances.</p>
+
+    <div class="ticket-list">
+      <div class="ticket-item">
+        <h3>DJ Black Coffee</h3>
+        <p>Price: R250</p>
+        <button onclick="redirectToPayment('DJ Black Coffee', 250)">Buy Now</button>
+      </div>
+      <div class="ticket-item">
+        <h3>DJ Zinhle</h3>
+        <p>Price: R200</p>
+        <button onclick="redirectToPayment('DJ Zinhle', 200)">Buy Now</button>
+      </div>
+      <div class="ticket-item">
+        <h3>Major League DJz</h3>
+        <p>Price: R300</p>
+        <button onclick="redirectToPayment('Major League DJz', 300)">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Us Section -->
+  <section id="visit">
+    <h2>Visit Us</h2>
+    <p>1728 A Section Makhombe St, Ezakheni, Ladysmith, KwaZulu-Natal</p>
+    <iframe src="https://www.google.com/maps?q=1728+A+Section+Makhombe+St,Ezakheni,+Ladysmith,+South+Africa&output=embed"></iframe>
+  </section>
+
+  <footer>
+    <p>Follow us on:
+      <a href="https://www.instagram.com/360lifestyle_saclub/" target="_blank"><img src="instagram-logo.png" alt="Instagram" width="20"></a>
+    </p>
+  </footer>
+
+  <script src="360_Lifestyle.js"></script>
+</body>
+</html>
